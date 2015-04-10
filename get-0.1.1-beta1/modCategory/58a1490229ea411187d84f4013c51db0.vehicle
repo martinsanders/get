@@ -1,0 +1,60 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '0fa597a63fa79e846b1734856eb0cdb5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":1,"property_preprocess":0,"name":"get","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*************************************\\nTitle: get\\nVersion: 0.1.1\\nBy: Martin Sanders.\\n\\nGet from URL string, example:\\n\\nReturn True if \\"extra_ids\\" contain\'s \\"56\\". \\n[[!get? &if=`extra_ids` &is=`56` &return=`selected`]]\\n\\nReturn True if \\"extra_ids\\" does not contain \\"56\\". \\n[[!get? &if=`extra_ids` &isnot=`56` &return=`selected`]]\\n\\nReturn value of string\\n[[!get? &if=`extra_ids` &prefix=`?startdate=` &suffix=`` &returnValue=`1`]]\\n\\n*************************************\\/\\n\\n$url = explode(\\",\\", $_GET[\\"$if\\"]);\\nif(in_array($is, $url)){\\n\\tif (in_array($is, $url)) {\\n\\t\\treturn $return;\\n\\t} elseif (!in_array($isnot, $url)){\\n\\t\\treturn $return;\\n\\t}\\n} elseif ($returnValue == 1) {\\n\\treturn $prefix . implode(\\" \\",$url) . $suffix;\\n}","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/*************************************\\nTitle: get\\nVersion: 0.1.1\\nBy: Martin Sanders.\\n\\nGet from URL string, example:\\n\\nReturn True if \\"extra_ids\\" contain\'s \\"56\\". \\n[[!get? &if=`extra_ids` &is=`56` &return=`selected`]]\\n\\nReturn True if \\"extra_ids\\" does not contain \\"56\\". \\n[[!get? &if=`extra_ids` &isnot=`56` &return=`selected`]]\\n\\nReturn value of string\\n[[!get? &if=`extra_ids` &prefix=`?startdate=` &suffix=`` &returnValue=`1`]]\\n\\n*************************************\\/\\n\\n$url = explode(\\",\\", $_GET[\\"$if\\"]);\\nif(in_array($is, $url)){\\n\\tif (in_array($is, $url)) {\\n\\t\\treturn $return;\\n\\t} elseif (!in_array($isnot, $url)){\\n\\t\\treturn $return;\\n\\t}\\n} elseif ($returnValue == 1) {\\n\\treturn $prefix . implode(\\" \\",$url) . $suffix;\\n}"}',
+        'guid' => 'c67e735c5c1fd9d63cebcdc60977bf35',
+        'native_key' => 1,
+        'signature' => 'f61ffaabbe41faebe405137f0f0f5adf',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'get',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd64cdafcf24c2640fa9a10ec5195e575',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '58a1490229ea411187d84f4013c51db0',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"get"}',
+);
