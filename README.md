@@ -1,5 +1,5 @@
 # get
-Modx get from url snippet
+Modx get from url string
 
 ##Get from URL string, example:
 
